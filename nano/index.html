@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#3C4858">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="ishome">
+	<!-- popupforms -->
+	<div class="hidden">
+		<form id="form-full" class="form_common">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="name">Имя</label>
+					<input type="text" class="form-control" id="name" placeholder="Иванов Иван">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="phone">Телефон</label>
+					<input type="tel" class="form-control" id="phone" placeholder="+7 701 123 45 67">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="пример@email.kz">
+			</div>
+			<div class="form-group">
+				<label for="service">Мне интересна следующая услуга:</label>
+				<select class="form-control" id="service">
+					<option>Удаление зуба</option>
+					<option>Консультация ортодонтолога</option>
+					<option>Консультация ЧЛХ</option>
+					<option>Повторный приём</option>
+					<option>Отбеливание зубов</option>
+				</select>
+			</div>
+			<label>В какое время Вас записать</label>
+			<div class="form-group">
+
+				<div class="form-check-inline">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="morning" value="option2">
+					<label class="form-check-label label-font" for="morning">до обеда
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="afternoon" value="option1">
+					<label class="form-check-label label-font" for="afternoon">
+						после обеда
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="no-mater" value="option3">
+					<label class="form-check-label label-font" for="no-mater">
+						не важно
+					</label>
+				</div>
+			</div>
+			<label>Какой день недели предпочителен</label>
+			<div class="form-group">
+
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="monday" id="monday">
+					<label class="form-check-label label-font" for="monday">
+						Понедельник
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="tuesday" id="tuesday">
+					<label class="form-check-label label-font" for="tuesday">
+						Вторник
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="wednesday" id="wednesday">
+					<label class="form-check-label label-font" for="wednesday">
+						Среда
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="thursday" id="thursday">
+					<label class="form-check-label label-font" for="thursday">
+						Четверг
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="friday" id="friday">
+					<label class="form-check-label label-font" for="friday">
+						Пятница
+					</label>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="comment">Вопрос или Коментарий</label>
+				<textarea class="form-control" id="comment" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">отправить</button>
+		</form>
+	</div>
+
+	<div class="hidden">
+		<form id="form-callback" class="form_common">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="name">Имя</label>
+					<input type="text" class="form-control" id="name" placeholder="Иванов Иван">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="phone">Телефон</label>
+					<input type="tel" class="form-control" id="phone" placeholder="+7 701 123 45 67">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="пример@email.kz">
+			</div>
+			<div class="form-group">
+				<label for="comment">Вопрос или Коментарий</label>
+				<textarea class="form-control" id="comment" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">отправить</button>
+		</form>
+	</div>
+	<!-- popupforms -->
+	<!-- Custom HTML -->
+	<header id="top" class="main_header">
+		<div class="container contact_wrap">
+			<div class="logo-wrap d-block d-lg-none">
+				<a class="logo-mobile" href="/"><img src="img/assets/logo-small.png" alt="logo"></a>
+			</div>
+			<a class="logo" href="/"><img src="img/assets/logo-big.png" alt="logo"></a>
+
+			<nav class="main-nav clearfix">
+				<ul class="copy">
+					<li class="active"><a href="/">Главная</a></li>
+					<li><a href="about.html">Клиника</a></li>
+					<li><a href="doctors.html">Врачи</a></li>
+					<li><a href="servis.html">Услуги</a></li>
+
+				</ul>
+			</nav>
+			<div class="contact">
+				<div class="contact_number"><a href="tel:+77011234567">+7 701 123 45 67</a></div>
+				<div class="contact_button"><a class="popup_recall" href="#form-callback">Обратный звонок</a></div>
+			</div>
+
+			<div class="mobile-menu-button"><span></span></div>
+		</div>
+	</header>
+	<div class="menu-container d-lg-none">
+		<div class="menu-sliders"></div>
+		<div class="menu-sliders"></div>
+		<div class="menu-sliders"></div>
+		<nav class="menu-mobile">
+
+			<div class="contact_number_mobile">
+
+				<a class="contact_number_mobile-phone" href="tel:+77011234567"><i class="fas fa-phone"></i></a>
+				<a class="contact_number_mobile-link" target="_blank" href="https://www.instagram.com/imzfly/"><i
+						class="fab fa-instagram"></i></a>
+			</div>
+
+		</nav>
+
+	</div>
+
+	<!-- <section class="first-section" style="background-image: url(img/bg_main2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="first-section-header">
+				<span>Мы трансформируем <b>вашу улыбку</b></span>
+				<span>Вы трансформируете <b>свою жизнь</b></span>
+				<div class="contact_button"><a class="popup_recall" href="#form-full">Записаться на приём</a></div>
+			</div>
+			<h1>NanoDent</h1>
+		</div>
+	</section> -->
+
+	<section class="first-section-main">
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="item-wrapper slider_background" style="background-image: url(img/header-bg/servis-1.jpg);">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="first-section-header">
+								<span>Мы трансформируем <b>вашу улыбку</b></span>
+								<span>Вы трансформируете <b>свою жизнь</b></span>
+								<div class="contact_button"><a class="popup_recall" href="#form-full">Записаться на приём</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="item-wrapper slider_background" style="background-image: url(img/bg_main2.jpg);">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="first-section-header">
+								<span>Вы приходите, а мы <b>дарим скидку</b></span>
+								<div class="contact_button"><a class="popup_recall" href="#form-full">Записаться на приём</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="item-wrapper slider_background" style="background-image: url(img/bg_main.jpg);">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="first-section-header">
+								<span>Здоровые <b>зубы</b></span>
+								<span>Здоровая <b>жизнь</b></span>
+								<div class="contact_button"><a class="popup_recall" href="#form-full">Записаться на приём</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+	</section>
+
+	<section class="second-section">
+		<div class="container">
+			<div class="welcome wow bounceInUp" data-wow-offset="150">
+				<span>Добро пожаловать!</span>
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-sm-12">
+						<p>Мы используем новейшие технологии для улучшения улыбок и здоровья полости рта наших пациентов.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="items-cool">
+				<div class="row">
+					<div class="col-md-4 item wow rotateInUpLeft" data-wow-offset="150" data-wow-delay="0.5s">
+						<div class="item-image"><img src="img/assets/icons/dentist.svg" alt="item-image"></div>
+						<p>Современное оборудование</p>
+
+					</div>
+					<div class="col-md-4 item wow zoomIn" data-wow-offset="150" data-wow-delay="1s">
+						<div class="item-image"><img src="img/assets/icons/doctor.svg" alt="item-image"></div>
+						<p>Опытные врачи</p>
+
+					</div>
+					<div class="col-md-4 item wow rotateInUpRight" data-wow-offset="150" data-wow-delay="1.5s">
+						<div class="item-image"><img src="img/assets/icons/guarantee-certificate.svg" alt="item-image"></div>
+						<p>Гарантия качества</p>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="third-section">
+
+		<div class="container">
+			<span class="block-name-mobile">О нас</span>
+			<div class="row info-block wow fadeInLeft" data-wow-offset="350" data-wow-duration="1.5s">
+				<div class="col-md-6 order-md-first order-last text-block">
+					<span class="block-name">О нас</span>
+					<h2>Вопросы комфорта пациента</h2>
+					<p>Др. Данияр Кызырханович понимает что пациенты очень щепетильно относятся к выбору статмологической клиники,
+						и по этому отношения, которые доктор Данияр Кызырханович и его команда строят с каждым пациентом,
+						действительно отличают NANODENT от других стоматологических клиник.
+					</p>
+					<p>Мы внимательно относимся к потребностям каждого пациента и тщательно оцениваем его ситуацию, чтобы
+						определить, какие методы лечения принесут ему наибольшую пользу. Комфорт пациента являются нашими главными
+						приоритетом, и мы стремимся к тому, чтобы каждый пациент чувствовал себя в безопасности в отношении
+						рекомендованного ему лечения.</p>
+					<div class="button_blue"><a href="/">Наши врачи</a></div>
+				</div>
+				<div class="col-md-6 order-md-last order-first  photo-block">
+					<div class="photo-block-image" style="background-image: url(img/1.jpg);">
+						<div class="overlay"></div>
+					</div>
+				</div>
+			</div>
+			<span class="block-name-mobile">Сервис</span>
+			<div class="row info-block wow fadeInRight" data-wow-offset="250" data-wow-duration="1.5s">
+
+				<div class="col-md-6 photo-block">
+
+					<div class="photo-block-image" style="background-image: url(img/2.jpg);">
+						<div class="overlay"></div>
+					</div>
+				</div>
+				<div class="col-md-6 text-block">
+					<span class="block-name">Сервис</span>
+					<h2>Полный стоматологический уход</h2>
+					<p>Ваши любые стоматологические потребности, включая полный осмотр и чистку, полное восстановление рта или
+						что-то среднее, мы обещаем предоставить вам исключительный уход на каждом этапе лечения.</p>
+					<p>Мы надеемся, что вы найдете этот сайт полезным и интересным ресурсом для решения всех ваших
+						стоматологических проблем. Если вам нужна дополнительная информация о любой из предлагаемых нами процедур
+						или о назначении встречи, позвоните в наш офис по номеру, указанному выше или закажите обратный звонок. </p>
+					<div class="button_blue"><a href="/">Услуги</a></div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="fourth-section parallax-window" data-parallax="scroll" data-image-src="img/smile2.jpg">
+		<div class="overlay"></div>
+		<div class="container">
+
+			<span class="block-name">Запись</span>
+			<div class="row justify-content-center">
+				<div class="col-md-5">
+					<h2 class="wow pulse" data-wow-iteration="15" data-wow-duration="1s">Заполните анкету онлайн</h2>
+				</div>
+			</div>
+			<div class="button_blue"><a class="popup_recall" href="#form-full">Записаться на приём</a></div>
+
+
+		</div>
+	</section>
+	<section class="comment-section">
+		<div class="container">
+			<span class="block-name">Отзывы</span>
+			<div id="carouselExampleControls" data-interval="5000" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item  active">
+						<div class="item-wrapper">
+							<div class="item-photo"><img src="img/clients/1.jpg" alt="client"></div>
+							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут</p>
+							<span class="item-name">Jenifer Lopez | Мать троих детей</span>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="item-wrapper">
+							<div class="item-photo"><img src="img/clients/2.jpg" alt="client"></div>
+							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут</p>
+							<span class="item-name">Brad Pitt | Директор ТОО "Рога и копыта"</span>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="item-wrapper">
+							<div class="item-photo"><img src="img/clients/3.jpg" alt="client"></div>
+							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут</p>
+							<span class="item-name">Назарбаев Н.А. | Президент РК</span>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="fifth-section parallax-window" data-parallax="scroll" data-image-src="img/bg-call.jpg">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-around ">
+				<div class="col-sm-4 wow fadeInLeft adress-wraper" data-wow-offset="150" data-wow-duration="1.5s">
+					<div class="adress_form">
+						<div class="adress-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+
+						<span>Адрес</span>
+						<p class="map-adress"> <a target="_blank" href="https://go.2gis.com/7pad8">Найти нас в 2Gis</a></p>
+					</div>
+				</div>
+				<div class="col-sm-4 d-sm-block d-md-none wow fadeInUp adress-wraper" data-wow-offset="150"
+					data-wow-duration="1.5s">
+					<div class="adress_form">
+						<div class="adress-icon">
+							<i class="fab fa-whatsapp"></i>
+						</div>
+
+						<span>Whatsapp</span>
+						<p class="map-adress"> <a target="_blank"
+								href="whatsapp://send?text=Добрый день&phone=+77010553111">Написать
+								нам</a></p>
+					</div>
+				</div>
+				<div class="col-sm-4 wow fadeInRight adress-wraper" data-wow-offset="150" data-wow-duration="1.5s">
+
+					<div class="adress_form">
+						<div class="adress-icon">
+							<i class="far fa-envelope"></i>
+						</div>
+
+						<span>Email</span>
+						<p class="map-adress"> <a href="mailto:5050503n@gmail.com">Напишите нам</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="top-footer">
+				<div id="back-top">
+					<a href="#" onclick="return up()">Вверх <i class="fas fa-arrow-up"></i></a>
+				</div>
+
+				<div class="row justify-content-between">
+					<div class="col-md-3">
+						<div class="logo-wrap">
+							<a class="logo" href="/"><img src="img/assets/logo-big.png" alt="logo"></a>
+						</div>
+					</div>
+
+					<div class="col-md-8 col-9 d-none d-md-block">
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="/">Главная</a></li>
+								<li><a href="about.html">Наш Офис</a></li>
+								<li><a href="doctors.html">Наши врачи</a></li>
+								<li><a href="servis.html">Услуги</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="row">
+					<div class="col-md-8">
+						<span class="rights">© Copyright - 2019 | Все права защищены </span>
+					</div>
+					<div class="col-md-4 social-icons">
+						<a target="_blank" href="/"><i class="fab fa-instagram"></i></a>
+						<a target="_blank" href="/"><i class="fab fa-telegram-plane"></i></a>
+						<a target="_blank" href="/"><i class="fab fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+	<script>
+		new WOW({
+			mobile: false,
+		}).init();
+	</script>
+
+
+	<!-- HelloPreload  -->
+	<div id="hellopreloader">
+		<div id="hellopreloader_preload"></div>
+	</div>
+	<!-- HelloPreload  -->
+
+</body>
+
+</html>

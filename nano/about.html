@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#3C4858">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<!-- popupforms -->
+	<div class="hidden">
+		<form id="form-full" class="form_common">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="name">Имя</label>
+					<input type="text" class="form-control" id="name" placeholder="Иванов Иван">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="phone">Телефон</label>
+					<input type="tel" class="form-control" id="phone" placeholder="+7 701 123 45 67">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="пример@email.kz">
+			</div>
+			<div class="form-group">
+				<label for="service">Мне интересна следующая услуга:</label>
+				<select class="form-control" id="service">
+					<option>Удаление зуба</option>
+					<option>Консультация ортодонтолога</option>
+					<option>Консультация ЧЛХ</option>
+					<option>Повторный приём</option>
+					<option>Отбеливание зубов</option>
+				</select>
+			</div>
+			<label>В какое время Вас записать</label>
+			<div class="form-group">
+
+				<div class="form-check-inline">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="morning" value="option2">
+					<label class="form-check-label label-font" for="morning">до обеда
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="afternoon" value="option1">
+					<label class="form-check-label label-font" for="afternoon">
+						после обеда
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="no-mater" value="option3">
+					<label class="form-check-label label-font" for="no-mater">
+						не важно
+					</label>
+				</div>
+			</div>
+			<label>Какой день недели предпочителен</label>
+			<div class="form-group">
+
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="monday" id="monday">
+					<label class="form-check-label label-font" for="monday">
+						Понедельник
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="tuesday" id="tuesday">
+					<label class="form-check-label label-font" for="tuesday">
+						Вторник
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="wednesday" id="wednesday">
+					<label class="form-check-label label-font" for="wednesday">
+						Среда
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="thursday" id="thursday">
+					<label class="form-check-label label-font" for="thursday">
+						Четверг
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="friday" id="friday">
+					<label class="form-check-label label-font" for="friday">
+						Пятница
+					</label>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="comment">Вопрос или Коментарий</label>
+				<textarea class="form-control" id="comment" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">отправить</button>
+		</form>
+	</div>
+
+	<div class="hidden">
+		<form id="form-callback" class="form_common">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="name">Имя</label>
+					<input type="text" class="form-control" id="name" placeholder="Иванов Иван">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="phone">Телефон</label>
+					<input type="tel" class="form-control" id="phone" placeholder="+7 701 123 45 67">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="пример@email.kz">
+			</div>
+			<div class="form-group">
+				<label for="comment">Вопрос или Коментарий</label>
+				<textarea class="form-control" id="comment" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">отправить</button>
+		</form>
+	</div>
+
+	<!-- popupforms -->
+	<!-- Custom HTML -->
+	<header id="top" class="main_header">
+		<div class="container contact_wrap">
+			<div class="logo-wrap d-block d-lg-none">
+				<a class="logo-mobile" href="/"><img src="img/assets/logo-small.png" alt="logo"></a>
+			</div>
+			<a class="logo" href="/"><img src="img/assets/logo-big.png" alt="logo"></a>
+
+			<nav class="main-nav clearfix">
+				<ul class="copy">
+					<li class="active"><a href="/">Главная</a></li>
+					<li><a href="about.html">Клиника</a></li>
+					<li><a href="doctors.html">Врачи</a></li>
+					<li><a href="servis.html">Услуги</a></li>
+
+				</ul>
+			</nav>
+			<div class="contact">
+				<div class="contact_number"><a href="tel:+77011234567">+7 701 123 45 67</a></div>
+				<div class="contact_button"><a class="popup_recall" href="#form-callback">Обратный звонок</a></div>
+			</div>
+
+			<div class="mobile-menu-button"><span></span></div>
+		</div>
+	</header>
+	<div class="menu-container d-lg-none">
+		<div class="menu-sliders"></div>
+		<div class="menu-sliders"></div>
+		<div class="menu-sliders"></div>
+		<nav class="menu-mobile">
+
+			<div class="contact_number_mobile">
+
+				<a class="contact_number_mobile-phone" href="tel:+77011234567"><i class="fas fa-phone"></i></a>
+				<a class="contact_number_mobile-link" target="_blank" href="https://www.instagram.com/imzfly/"><i
+						class="fab fa-instagram"></i></a>
+			</div>
+
+		</nav>
+
+	</div>
+
+	<section class="inner-header">
+		<div id="carouselExampleSlidesOnly" class="carousel slide custom-slider_full" data-interval="2000"
+			data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="item-wrapper slider_background" style="background-image: url(img/header-bg/office-1.jpg);"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="item-wrapper slider_background" style="background-image: url(img/header-bg/office-2.jpg);"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="item-wrapper slider_background" style="background-image: url(img/header-bg/office-3.jpg);"></div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<div class="container header_warpper">
+			<h1>Наша Клиника</h1>
+		</div>
+	</section>
+
+
+	<section class="video-about section-line wow bounceInUp" data-wow-offset="200">
+		<div class="container">
+			<span class="section-header">Наш Офис</span>
+			<div class="row justify-content-end">
+				<div class="col-md-9">
+					<div class="video">
+						<iframe src="https://www.youtube.com/embed/zD4ju2OFNyI" allowfullscreen></iframe></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="same section-line wow bounceInUp" data-wow-offset="200">
+		<div class="container">
+			<span class="section-header">NanoDent</span>
+			<div class="row justify-content-end">
+				<div class="col-md-9">
+					<p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Запятой живет меня,
+						составитель текстами послушавшись продолжил рыбного, свой, от всех дорогу ее точках взгляд образ строчка
+						пустился предупредила имеет лучше!</p>
+					<p>Своих запятой предложения ты до. Запятой там дал буквенных буквоград большой, образ о свой первую до,
+						курсивных но над снова злых ее грустный! Они lorem приставка строчка там пор ручеек.</p>
+					<img src="img/smile.jpg" alt="about nanodent" class="img-responsive img-width">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="same section-line wow bounceInUp" data-wow-offset="200">
+		<div class="container">
+			<span class="section-header">Назначение встречи</span>
+			<div class="row justify-content-end">
+				<div class="col-md-9">
+					<p>Для записи на приём просто позвоните нам по номеру указанному в верхнем правом углу сайта или <a class="popup_recall" href="#form-full">заполните форму онлайн</a> и наши менеджера свяжутся с вам в
+						ближайшее время.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="same section-line wow bounceInUp" data-wow-offset="200">
+		<div class="container">
+			<span class="section-header">Способы Оплаты</span>
+			<div class="row justify-content-end">
+				<div class="col-md-9">
+					<p>Мы принимаем Visa, Mastercard, American express и многие другие способы безналичного расчета. Так же мы
+						сотрудничаем со многими страховыми компаниями и банком KASPI BANK, что позволит вам использовать
+						преимущества KaspiRED.</p>
+					<div class="row justify-content-between payment-logos">
+						<div class="col-3 "><img src="img/assets/payment/1.jpg" alt="pay" class="img-responsive img-width"></div>
+						<div class="col-3 "><img src="img/assets/payment/2.jpg" alt="pay" class="img-responsive img-width"></div>
+						<div class="col-3 "><img src="img/assets/payment/3.jpg" alt="pay" class="img-responsive img-width"></div>
+						<div class="col-3 "><img src="img/assets/payment/4.jpg" alt="pay" class="img-responsive img-width"></div>
+						<div class="col-3 "><img src="img/assets/payment/5.jpg" alt="pay" class="img-responsive img-width"></div>
+
+						<div class="col-3 "><img src="img/assets/payment/7.jpg" alt="pay" class="img-responsive img-width"></div>
+						<div class="col-3 "><img src="img/assets/payment/8.jpg" alt="pay" class="img-responsive img-width"></div>
+						<div class="col-3 "><img src="img/assets/payment/9.jpg" alt="pay" class="img-responsive img-width"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="same wow bounceInUp" data-wow-offset="200">
+		<div class="container">
+			<span class="section-header">Как доехать</span>
+			<div class="row justify-content-end">
+				<div class="col-md-9">
+					<p>Наша клиника расположена по адресу <a target="_blank" href="https://go.2gis.com/7pad8">г.Алматы проспект
+							Гагарина 66б, офис 12</a></p>
+					<img src="img/map.png" alt="about nanodent" class="img-responsive img-width">
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="top-footer">
+				<div id="back-top">
+					<a href="#" onclick="return up()">Вверх <i class="fas fa-arrow-up"></i></a>
+				</div>
+
+				<div class="row justify-content-between">
+					<div class="col-md-3">
+						<div class="logo-wrap">
+							<a class="logo" href="/"><img src="img/assets/logo-big.png" alt="logo"></a>
+						</div>
+					</div>
+
+					<div class="col-md-8 col-9 d-none d-md-block">
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="/">Главная</a></li>
+								<li><a href="about.html">Наш Офис</a></li>
+								<li><a href="doctors.html">Наши врачи</a></li>
+								<li><a href="servis.html">Услуги</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="row">
+					<div class="col-md-8">
+						<span class="rights">© Copyright - 2019 | Все права защищены </span>
+					</div>
+					<div class="col-md-4 social-icons">
+						<a target="_blank" href="/"><i class="fab fa-instagram"></i></a>
+						<a target="_blank" href="/"><i class="fab fa-telegram-plane"></i></a>
+						<a target="_blank" href="/"><i class="fab fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+	<script>
+		new WOW({
+			mobile: false,
+		}).init();
+	</script>
+
+
+	<!-- HelloPreload  -->
+
+	<!-- <div id="hellopreloader"><div id="hellopreloader_preload"></div></div> -->
+	<!-- HelloPreload  -->
+
+</body>
+
+</html>
